@@ -39,14 +39,21 @@
     }
 
     /* Card container */
+    .list {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 30px;
+      max-width: calc(100% - 600px); /* 300px left + 300px right */
+      margin: 0 auto;
+    }
+
     .card {
       background-color: #1e1f25;
       border-radius: 16px;
       overflow: hidden;
       box-shadow: 0 4px 12px rgba(0,0,0,0.3);
-      max-width: 500px;
-      margin: 0 auto;
       transition: transform 0.3s ease;
+      width: 100%;
     }
 
     .card:hover {
@@ -86,10 +93,22 @@
     }
 
     /* Responsive Design */
+    @media (max-width: 1200px) {
+      .list {
+        max-width: 100%;
+        padding: 0 60px;
+      }
+    }
+
     @media (max-width: 768px) {
       .title {
         font-size: 2rem;
         padding: 10px 20px;
+      }
+
+      .list {
+        padding: 0 30px;
+        grid-template-columns: 1fr;
       }
 
       .card-details h3 {
@@ -116,6 +135,10 @@
         font-size: 0.85rem;
         padding: 6px 14px;
       }
+
+      .list {
+        padding: 0 16px;
+      }
     }
   </style>
 
@@ -126,16 +149,47 @@
   <main>
     <div class="title"><h1>Nokol Area</h1></div>
 
-    <div class="card">
-      <div class="img">
-        <img src="IMG_20250718_192623.jpg" alt="Math-3 Material">
+    <section class="list">
+      <div class="card">
+        <div class="img">
+          <img src="./images/Math 3.jpg" alt="Math-3 Material">
+        </div>
+        <div class="card-details">
+          <h3>Math-3</h3>
+          <a href="./Math-3/Math 3.zip">Download Now</a>
+        </div>
       </div>
-      <div class="card-details">
-        <h3>Math-3</h3>
-        <a href="./Math-3/Math 3.zip">Download Now</a>
+
+      <div class="card">
+        <div class="img">
+          <img src="./images/Digital Electronics.jpg" alt="Digital Electronics Material">
+        </div>
+        <div class="card-details">
+          <h3>Digital Electronics 1</h3>
+          <a href="./Digital Electronics/Digital Electronics.zip">Download Now</a>
+        </div>
       </div>
-    </div>
+
+      <div class="card">
+        <div class="img">
+          <img src="./images/Python 2.jpg" alt="Digital Electronics Material">
+        </div>
+        <div class="card-details">
+          <h3>Python 2</h3>
+          <a href="./Python 2/Python 2.zip">Download Now</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="img">
+          <img src="./images/Physics 2.jpg" alt="Digital Electronics Material">
+        </div>
+        <div class="card-details">
+          <h3>Python 2</h3>
+          <a href="./Physics 2/Physics 2.zip">Download Now</a>
+        </div>
+      </div>
+    </section>
   </main>
 </body>
 </html>
-
