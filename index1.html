@@ -5,159 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Nokol Website</title>
 
-  <style>
-    /* Reset and base */
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
-
-    body {
-      background-color: #1d3026;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      color: #f0f0f0;
-      padding: 20px;
-    }
-
-    /* Title styling */
-    .title {
-      text-align: center;
-      font-size: 2.5rem;
-      color: rgb(224, 245, 224);
-      background-image: linear-gradient(135deg, #1c728b, lch(50.33% 70.73 133.81));
-      border: 3px solid rgba(143, 194, 67, 0.253);
-      border-radius: 60px;
-      padding: 15px 30px;
-      margin-bottom: 40px;
-      box-shadow: 0 5px 15px rgba(130, 250, 114, 0.4);
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
-    }
-
-    .title:hover {
-      transform: scale(1.03);
-      box-shadow: 0 10px 20px rgba(130, 250, 114, 0.6);
-    }
-
-    .description{
-      max-width: 580px;
-      margin: auto;
-      border: 3px solid rgb(74, 160, 127);
-      padding: 10px;
-      margin-bottom: 40px;
-      color: #08d866;
-    
-    }
-
-    /* Card container */
-    .list {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-      gap: 30px;
-      max-width: calc(100% - 600px); /* 300px left + 300px right */
-      margin: 0 auto;
-    }
-
-    .card {
-      background-color: #063529;
-      border-radius: 16px;
-      overflow: hidden;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.3);
-      transition: transform 0.3s ease;
-      width: 100%;
-    }
-
-    .card:hover {
-      transform: scale(1.02);
-    }
-
-    .card img {
-      width: 100%;
-      height: auto;
-      display: block;
-    }
-
-    .card-details {
-      padding: 20px;
-      text-align: center;
-    }
-
-    .card-details h3 {
-      font-size: 1.8rem;
-      margin-bottom: 10px;
-      background-image: linear-gradient(135deg, #2c7592, lch(50.33% 70.73 133.81));
-      color:  rgb(210, 253, 233);
-      padding: 8px 0;
-      border-radius: 20px;
-    }
-
-    .card-details a {
-      display: inline-block;
-      padding: 10px 20px;
-      background-image: linear-gradient(135deg, #6069e2, #1076b1);
-      color: white;
-      text-decoration: none;
-      border-radius: 25px;
-      border: 1px solid;
-      font-weight: bold;
-      transition: background 0.3s ease;
-    }
-
-    .card-details a:hover {
-      background-image: linear-gradient(135deg, #483e37, #7d91ab);
-    }
-
-    /* Responsive Design */
-    @media (max-width: 1200px) {
-      .list {
-        max-width: 100%;
-        padding: 0 60px;
-      }
-    }
-
-    @media (max-width: 768px) {
-      .title {
-        font-size: 2rem;
-        padding: 10px 20px;
-      }
-
-      .list {
-        padding: 0 30px;
-        grid-template-columns: 1fr;
-      }
-
-      .card-details h3 {
-        font-size: 1.5rem;
-      }
-
-      .card-details a {
-        font-size: 0.9rem;
-        padding: 8px 16px;
-      }
-    }
-
-    @media (max-width: 480px) {
-      .title {
-        font-size: 1.6rem;
-        padding: 8px 16px;
-      }
-
-      .card-details h3 {
-        font-size: 1.2rem;
-      }
-
-      .card-details a {
-        font-size: 0.85rem;
-        padding: 6px 14px;
-      }
-
-      .list {
-        padding: 0 16px;
-      }
-    }
-  </style>
-
   <link rel="shortcut icon" href="./images/logo.png" type="image/x-icon">
+
+  <link rel="stylesheet" href="index1.css ">
 </head>
 
 <body>
@@ -174,48 +24,34 @@
     </p>
   </div>
 
-    <section class="list">
-      <div class="card">
-        <div class="img">
-          <img src="./images/Math 3.jpg" alt="Math-3 Material">
-        </div>
-        <div class="card-details">
-        <h3>Math-3</h3>
-        <a href="https://forms.gle/avoxnKjbqvLMyPDFA" target="_blank">Download Now</a>
-      </div>
+<section class="main-layout">
+  <div class="layout1">
+    <button class="layout1title"><a href="./images/নটিশ.png">📋Notice</a></button>
+  </div>
 
-      </div>
+  <div class="layout2">
+    <div class="layout2card"><a href="./.html">Computer 1st</a>
+    </div>
 
-      <div class="card">
-        <div class="img">
-          <img src="./images/Digital Electronics.jpg" alt="Digital Electronics Material">
-        </div>
-        <div class="card-details">
-          <h3>Digital Electronics 1</h3>
-          <a href="https://forms.gle/avoxnKjbqvLMyPDFA">Download Now</a>
-        </div>
-      </div>
+    <div class="layout2card"><a href="./.html">Computer 2nd</a></div>
 
-      <div class="card">
-        <div class="img">
-          <img src="./images/Python 2.jpg" alt="Digital Electronics Material">
-        </div>
-        <div class="card-details">
-          <h3>Python 2</h3>
-          <a href="https://forms.gle/avoxnKjbqvLMyPDFA">Download Now</a>
-        </div>
-      </div>
 
-      <div class="card">
-        <div class="img">
-          <img src="./images/Physics 2.jpg" alt="Digital Electronics Material">
-        </div>
-        <div class="card-details">
-          <h3>Physics 2</h3>
-          <a href="https://forms.gle/avoxnKjbqvLMyPDFA">Download Now</a>
-        </div>
-      </div>
-    </section>
+    <div class="layout2card"><a href="./computer third.html">Computer 3rd</a></div>
+  
+
+    <div class="layout2card"><a href="./.html">Computer 4th</a></div>
+  
+
+    <div class="layout2card"><a href="./.html">Computer 5th</a></div>
+  
+
+    <div class="layout2card"><a href="./.html">Computer 6th</a></div>
+ 
+
+    <div class="layout2card"><a href="./.html">Computer 7th</a></div>
+  </div>
+    
+</section>
   </main>
 </body>
 </html>

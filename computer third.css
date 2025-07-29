@@ -1,0 +1,128 @@
+* {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background-color: #1d3026;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      color: #f0f0f0;
+      padding: 20px;
+    }
+
+ /* description */
+
+    .description{
+      max-width: calc(100% - 600px);
+      margin: auto;
+      border: 3px solid rgb(74, 160, 127);
+      padding: 10px;
+      margin-bottom: 40px;
+      color: #08d866;
+    
+    }
+
+
+    /* Card container */
+    .list {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 30px;
+      max-width: calc(100% - 600px); /* 300px left + 300px right */
+      margin: 0 auto;
+    }
+
+    .card {
+      background-color: #063529;
+      border-radius: 16px;
+      overflow: hidden;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+      transition: transform 0.3s ease;
+      width: 100%;
+    }
+
+    .card:hover {
+      transform: scale(1.02);
+    }
+
+    .card img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    .card-details {
+      padding: 20px;
+      text-align: center;
+    }
+
+    .card-details h3 {
+      font-size: 1.8rem;
+      margin-bottom: 10px;
+      background-image: linear-gradient(135deg, #2c7592, lch(50.33% 70.73 133.81));
+      color:  rgb(210, 253, 233);
+      padding: 8px 0;
+      border-radius: 20px;
+    }
+
+ 
+.card-details a {
+  display: inline-block;
+  padding: 10px 20px;
+  background-image: linear-gradient(135deg, #6069e2, #1076b1);
+  color: white;
+  text-decoration: none;
+  border-radius: 25px;
+  border: 1px solid;
+  font-weight: bold;
+  transition: transform 0.7s ;
+}
+
+  .card-details a:hover {
+  background-image: linear-gradient(135deg, #483e37, #7d91ab);
+  transform: scale(0.9);
+  }
+
+    /* Responsive Design */
+    @media (max-width: 1200px) {
+       .description{
+        max-width: 100%;
+     }
+
+      .list {
+        max-width: 100%;
+        padding: 0 60px;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .list {
+        padding: 0 30px;
+        grid-template-columns: 1fr;
+      }
+
+      .card-details h3 {
+        font-size: 1.5rem;
+      }
+
+      .card-details a {
+        font-size: 0.9rem;
+        padding: 8px 16px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .card-details h3 {
+        font-size: 1.2rem;
+      }
+
+      .card-details a {
+        font-size: 0.85rem;
+        padding: 6px 14px;
+      }
+
+      .list {
+        padding: 0 16px;
+      }
+    }
