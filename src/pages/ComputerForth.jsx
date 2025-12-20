@@ -91,6 +91,21 @@ const ComputerThird = () => {
                             </a>
                         </div>
                     </div>
+                    <div className="card">
+                        <div className="img">
+                            <img src="/images/Environmental-Studies.jpg" alt="Environmental Studies Material" />
+                        </div>
+                        <div className="card-details">
+                            <h3>Environmental Studies</h3>
+                            <a
+                                href="https://forms.gle/avoxnKjbqvLMyPDFA"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                Download Now
+                            </a>
+                        </div>
+                    </div>
                 </section>
             </main>
         </div>
