@@ -4,6 +4,7 @@ import Home from './pages/Home';
 import NokolArea from './pages/NokolArea';
 import ComputerThird from './pages/ComputerThird';
 import ComputerForth from './pages/ComputerForth';
+import ComputerFifth from './pages/ComputerFifth';
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
       <Route path="/nokol-area" element={<NokolArea />} />
       <Route path="/computer-third" element={<ComputerThird />} />
       <Route path="/computer-forth" element={<ComputerForth />} />
+      <Route path="/computer-fifth" element={<ComputerFifth/>} />
     </Routes>
   );
 }

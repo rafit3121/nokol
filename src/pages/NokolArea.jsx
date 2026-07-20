@@ -40,7 +40,7 @@ const NokolArea = () => {
                         </div>
 
                         <div className="layout2card">
-                            <a href="#">Computer 5th</a>
+                            <Link to="/computer-fifth">Computer 5th</Link>
                         </div>
 
                         <div className="layout2card">
