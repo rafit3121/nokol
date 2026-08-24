@@ -28,11 +28,11 @@ const NokolArea = () => {
 
           <div className="layout2">
             <div className="layout2card">
-              <a href="#">Computer 1st</a>
+              <Link to="/computer-first">Computer 1st</Link>
             </div>
 
             <div className="layout2card">
-              <a href="#">Computer 2nd</a>
+              <Link to="/computer-second">Computer 2nd</Link>
             </div>
 
             <div className="layout2card">
